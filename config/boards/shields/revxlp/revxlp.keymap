@@ -61,7 +61,7 @@
 //                                   |  GUI   |         |   MO3   |                                   |       |    /    |   CTRL  |
 //                                   '--------+---------+---------'                                   '-------+---------+---------'
                         bindings = <
-   &kp ESC    &kp EXCL       &kp AT        &kp HASH        &kp DLLR             &kp PRCNT             &kp KP_MINUS  &kp N7     &kp N8      &kp N9   &kp KP_EQUAL       &kp KP_DIVIDE
+   &kp ESC    &kp EXCL       &kp AT        &kp HASH        &kp DLLR             &kp PRCNT             &kp KP_MINUS  &kp N7     &kp N8      &kp N9   &kp EQUAL          &kp KP_DIVIDE
    &trans     &kp CARET      &kp AMPS      &kp KP_MULTIPLY &kp LEFT_BRACE       &kp RIGHT_BRACE       &kp KP_PLUS   &kp N4     &kp N5      &kp N6   &kp LPAR           &kp RPAR
    &kp LSHFT  &kp BACKSLASH  &kp COMMA     &kp DOT         &kp LEFT_BRACKET     &kp RIGHT_BRACKET     &kp N0        &kp N1     &kp N2      &kp N3   &kp UNDERSCORE     &kp COLON
                                            &kp LGUI        &trans               &mo ADJUST            &trans        &kp FSLH   &kp LCTRL
@@ -69,40 +69,40 @@
                 };
                 
                 raise_layer {
-// .-----------------------------------------------------------------.                                                  .---------------------------------------------------------------------.
-// |   	 F1 	    |   F2  |   F3   |   F4   |     F5    |   F6     |                                                  |   F7    |      F8      |    F9   |   F10   |    F11   |    F12      |
-// |----------------+-------+--------+--------+-----------+----------|                                                  |---------+--------------+---------+---------+----------+-------------|
-// |   CTRL/Tab     |       |        |        |PAUSE_BREAK|   DEL    |                                                  |  LEFT   |     UP       |   DOWN  |  RIGHT  |          |             |
-// |----------------+-------+--------+--------+-----------+----------|                                                  |---------+--------------+---------+---------+----------+-------------|
-// |     SHFT       |       |        |        | CTRL+LEFT |CTRL+RIGHT|                                                  |CTRL+LEFT|  CTRL+RIGHT  |  HOME   |   END   |          |   OUT_TOG   |
-// '---------------------------------+--------+-----------+----------+                                                  |---------+--------------+---------+----------------------------------'
-//                                   |  GUI   |    MO3    |          |                                                  |   CTRL  |    ALT/PU    |    PD   |
-//                                   '--------+-----------+----------'                                                  '---------+--------------+---------'
+// .-----------------------------------------------------------------.                                                  .----------------------------------------------------------------------------.
+// |   	 F1 	    |   F2  |   F3   |   F4   |     F5    |   F6     |                                                  |   F7    |      F8     |    F9   |      F10       |    F11   |    F12      |
+// |----------------+-------+--------+--------+-----------+----------|                                                  |---------+-------------+---------+----------------+----------+-------------|
+// |   CTRL/Tab     |       |        |        |PAUSE_BREAK|   DEL    |                                                  |  LEFT   |     DOWN    |    UP   |     RIGHT      |   BKSP   |             |
+// |----------------+-------+--------+--------+-----------+----------|                                                  |---------+-------------+---------+----------------+----------+-------------|
+// |     SHFT       |       |        |        | CTRL+LEFT |CTRL+RIGHT|                                                  |CTRL+LEFT|    HOME     |   END   |   CTRL+RIGHT   |          |   OUT_TOG   |
+// '---------------------------------+--------+-----------+----------+                                                  |---------+-------------+---------+-----------------------------------------'
+//                                   |  GUI   |    MO3    |          |                                                  |   CTRL  |    ALT/PU   |    PD   |
+//                                   '--------+-----------+----------'                                                  '---------+-------------+---------'
 
                         bindings = <
-   &kp F1		   &kp F2   		  &kp F3             &kp F4            &kp F5              &kp F6                  &kp F7               &kp F8                  &kp F9		       &kp F10            &kp F11     &kp F12
-   &trans          &kp LEFT_ARROW     &trans     	     &trans            &kp PAUSE_BREAK     &kp DEL                 &kp LEFT_ARROW       &kp UP_ARROW            &kp DOWN_ARROW     &kp RIGHT_ARROW    &trans      &trans
-   &trans		   &trans    		  &trans             &trans            &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)     &kp LC(LEFT_ARROW)   &kp LC(RIGHT_ARROW)     &kp HOME           &kp END            &trans      &out OUT_TOG
-                              &kp LGUI           &mo ADJUST        &trans                                              &kp LCTRL            &mt RALT PAGE_UP             &kp PAGE_DOWN
+   &kp F1		   &kp F2   		  &kp F3             &kp F4            &kp F5              &kp F6                  &kp F7               &kp F8              &kp F9		   &kp F10             &kp F11     &kp F12
+   &trans          &kp LEFT_ARROW     &trans     	     &trans            &kp PAUSE_BREAK     &kp DEL                 &kp LEFT_ARROW       &kp DOWN_ARROW      &kp UP_ARROW   &kp RIGHT_ARROW     &kp BSPC    &trans
+   &trans		   &trans    		  &trans             &trans            &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)     &kp LC(LEFT_ARROW)   &kp HOME            &kp END        &kp LC(RIGHT_ARROW) &trans      &out OUT_TOG
+                              &kp LGUI           &mo ADJUST        &trans                                              &kp LCTRL            &mt RALT PAGE_UP    &kp PAGE_DOWN
                         >;
                 };
 
                 adjust_layer {
 // .--------------------------------------------------------.       .------------------------------------------------------------------.
-// |         |        |        |        |         |         |       |  VOL+  |        |         |             |          |             |
+// |  RESET  |        |        |        |         |         |       |  VOL+  |        |         |             |          |             |
 // |---------+--------+--------+--------+---------+---------|       |--------+--------+---------+-------------+----------+-------------|
 // |  BTCLR  |  BT1   |  BT2   |  BT3   |  BT4    |  BT5    |       |  VOL-  |        |         |             |          |             |
 // |---------+--------+--------+--------+---------+---------|       |--------+--------+---------+-------------+----------+-------------|
 // |         |        |        |        |         |         |       |  MUTE  |        |         |             |          |             |
 // '---------------------------+--------+---------+---------+       |--------+--------+---------+--------------------------------------'
-//                             |        |         |         |       |        |  MENU  |         |
+//                             |        |         |         |       |        |        |         |
 //                             '--------+---------+---------'       '--------+--------+---------'
 
                         bindings = <
    &sys_reset  &trans          &trans         &trans          &trans          &trans            &kp C_VOLUME_UP    &trans &trans &trans &trans &bootloader
    &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4      &kp C_VOLUME_DOWN  &trans &trans &trans &trans &trans
    &trans      &trans          &trans         &trans          &trans          &trans            &kp C_MUTE         &trans &trans &trans &trans &trans
-                                   &trans &trans &trans                                         &trans &kp C_MENU &trans
+                                   &trans &trans &trans                                         &trans &trans &trans
                         >;
                 };
         };
