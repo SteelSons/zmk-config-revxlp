@@ -83,7 +83,7 @@
    &kp F1		   &kp F2   		  &kp F3             &kp F4            &kp F5              &kp F6                  &kp F7               &kp F8              &kp F9		   &kp F10             &kp F11     &kp F12
    &kp LSHFT       &kp PAUSE_BREAK    &kp LGUI     	     &kp PAGE_UP       &kp INSERT          &kp DEL                 &kp LEFT_ARROW       &kp DOWN_ARROW      &kp UP_ARROW   &kp RIGHT_ARROW     &kp BSPC    &trans
    &trans		   &trans    		  &trans             &kp PAGE_DOWN     &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)     &kp LC(LEFT_ARROW)   &kp HOME            &kp END        &kp LC(RIGHT_ARROW) &trans      &out OUT_TOG
-                              &kp LGUI           &mo ADJUST        &trans                                              &kp LCTRL            &kp LALT            &kp K_MENU
+                              &kp LGUI           &mo ADJUST        &trans                                              &kp LCTRL            &kp LALT            &kp K_CMENU
                         >;
                 };
 
