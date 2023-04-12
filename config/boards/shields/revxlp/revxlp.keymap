@@ -36,17 +36,17 @@
 // .----------------------------------------------------------------.                 .--------------------------------------------------------------------.
 // |   ESC      |    Q    |    W   |   E    |    R    |      T      |                 |   Y   |      U       |      I      |    O    |     P    |    [     |
 // |------------+---------+--------+--------+---------+-------------|                 |-------+--------------+-------------+---------+----------+----------|
-// |   Tab      |    A    |    S   |   D    |    F    |      G      |                 |   H   |      J       |      K      |    L    |     ;    |    '     |
+// | CTRL/TAB   |    A    |    S   |   D    |    F    |      G      |                 |   H   |      J       |      K      |    L    |     ;    |    '     |
 // |------------+---------+--------+--------+---------+-------------|                 |-------+--------------+-------------+---------+----------+----------|
-// |   CTRL     |    Z    |    X   |   C    |    V    |      B      |                 |   N   |      M       |      ,      |    .    |     /    |    ]     |
+// |   SHFT     |    Z    |    X   |   C    |    V    |      B      |                 |   N   |      M       |      ,      |    .    |     /    |    ]     |
 // '-------------------------------+--------+---------+-------------+                 |-------+--------------+-------------+-------------------------------'
-//                                 |  GUI   |   MO1   |   MO2/ENT   |                 |  SPC  |  SHFT/CAPS   |   ALT/BKSP  |
+//                                 |  GUI   |   MO1   |   MO2/SPC   |                 |  ENT  |  SHFT/CAPS   |   ALT/BKSP  |
 //                                 '--------+---------+-------------'                 '-------+--------------+-------------'
                         bindings = <
    &kp ESC        &kp Q       &kp W      &kp E     &kp R           &kp T                &kp Y          &kp U               &kp I        &kp O     &kp P      &kp LEFT_BRACKET
-   &kp TAB        &kp A       &kp S      &kp D     &kp F           &kp G      	        &kp H          &kp J               &kp K        &kp L     &kp SEMI   &kp SQT
-   &kp LCTRL      &kp Z       &kp X      &kp C     &kp V           &kp B      	        &kp N          &kp M               &kp COMMA    &kp DOT   &kp FSLH   &kp RIGHT_BRACKET
-                                       &kp LGUI    &mo 1           &lt NAVI RET         &kp SPACE      &mt LSHFT CAPSLOCK  &mt LALT BSPC    
+   &mt LCTRL TAB  &kp A       &kp S      &kp D     &kp F           &kp G      	        &kp H          &kp J               &kp K        &kp L     &kp SEMI   &kp SQT
+   &kp LSHFT      &kp Z       &kp X      &kp C     &kp V           &kp B      	        &kp N          &kp M               &kp COMMA    &kp DOT   &kp FSLH   &kp RIGHT_BRACKET
+                                       &kp LGUI    &mo 1           &lt NAVI SPACE       &kp RET        &mt LSHFT CAPSLOCK  &mt LALT BSPC    
                         >;
                 };
                 
@@ -54,36 +54,36 @@
 // .--------------------------------------------------------------.                   .-----------------------------------------------------------.
 // |     `        |    !    |    @   |   #    |    $    |    %    |                   |   -   |    7    |    8    |    9    |     =    |     /    |
 // |--------------+---------+--------+--------+---------+---------|                   |-------+---------+---------+---------+----------+----------|
-// |   SHFT       |    ^    |    &   |   *    |    {    |    }    |                   |   +   |    4    |    5    |    6    |     (    |     )    |
+// |   CTRL/TAB   |    ^    |    &   |   *    |    {    |    }    |                   |   +   |    4    |    5    |    6    |     (    |     )    |
 // |--------------+---------+--------+--------+---------+---------|                   |-------+---------+---------+---------+----------+----------|
-// |   CTRL       |    \    |    ,   |   .    |    [    |    ]    |                   | INSERT|    1    |    2    |    3    |     _    |     :    |
+// |   SHFT       |    \    |    ,   |   .    |    [    |    ]    |                   | INSERT|    1    |    2    |    3    |     _    |     :    |
 // '---------------------------------+--------+---------+---------+                   |-------+---------+---------+-------------------------------'
 //                                   |  GUI   |         |   MO3   |                   |       |    0    |    /    |
 //                                   '--------+---------+---------'                   '-------+---------+---------'
                         bindings = <
    &kp GRAVE  &kp EXCL       &kp AT        &kp HASH        &kp DLLR             &kp PRCNT             &kp KP_MINUS  &kp N7     &kp N8      &kp N9   &kp EQUAL          &kp KP_DIVIDE
-   &kp LSHFT  &kp CARET      &kp AMPS      &kp KP_MULTIPLY &kp LEFT_BRACE       &kp RIGHT_BRACE       &kp KP_PLUS   &kp N4     &kp N5      &kp N6   &kp LPAR           &kp RPAR
-   &kp LCTRL  &kp BACKSLASH  &kp COMMA     &kp DOT         &kp LEFT_BRACKET     &kp RIGHT_BRACKET     &kp INSERT    &kp N1     &kp N2      &kp N3   &kp UNDERSCORE     &kp COLON
+   &trans     &kp CARET      &kp AMPS      &kp KP_MULTIPLY &kp LEFT_BRACE       &kp RIGHT_BRACE       &kp KP_PLUS   &kp N4     &kp N5      &kp N6   &kp LPAR           &kp RPAR
+   &trans     &kp BACKSLASH  &kp COMMA     &kp DOT         &kp LEFT_BRACKET     &kp RIGHT_BRACKET     &kp INSERT    &kp N1     &kp N2      &kp N3   &kp UNDERSCORE     &kp COLON
                                            &kp LGUI        &trans               &mo ADJUST            &trans        &kp N0     &kp FSLH
                         >;
                 };
                 
                 raise_layer {
-// .-----------------------------------------------------------------.                .---------------------------------------------------------------------------.
-// |   	 F1 	|     F2    |   F3   |   F4   |     F5    |   F6     |                |   F7    |      F8     |    F9   |      F10       |    F11   |    F12      |
-// |------------+-----------+--------+--------+-----------+----------|                |---------+-------------+---------+----------------+----------+-------------|
-// |    LSHFT   |PAUSE_BREAK|   GUI  |        |   INSERT  |   DEL    |                |  LEFT   |     DOWN    |    UP   |     RIGHT      |   BKSP   |             |
-// |------------+-----------+--------+--------+-----------+----------|                |---------+-------------+---------+----------------+----------+-------------|
-// |     CTRL   |           |   CUT  |  COPY  |   PASTE   |          |                |CTRL+LEFT|    HOME     |   END   |   CTRL+RIGHT   |          |   OUT_TOG   |
-// '---------------------------------+--------+-----------+----------+                |---------+-------------+---------+-----------------------------------------'
-//                                   |  GUI   |    MO3    |          |                |   CTRL  |     ALT     |   MENU  |
-//                                   '--------+-----------+----------'                '---------+-------------+---------'
+// .-----------------------------------------------------------------.                .------------------------------------------------------------------------.
+// |   	 F1 	|     F2    |   F3   |   F4   |     F5    |   F6     |                |    F7    |      F8     |    F9   |   F10      |    F11   |    F12      |
+// |------------+-----------+--------+--------+-----------+----------|                |----------+-------------+---------+------------+----------+-------------|
+// |    CTRL    |PAUSE_BREAK|        |        |   MENU    |   DEL    |                |   LEFT   |     DOWN    |    UP   |   RIGHT    |   BKSP   |             |
+// |------------+-----------+--------+--------+-----------+----------|                |----------+-------------+---------+------------+----------+-------------|
+// |    SHFT    |           |        |  COPY  |   PASTE   |CTRL+LEFT |                |CTRL+RIGHT|    HOME     |   END   |   INSERT   |          |   OUT_TOG   |
+// '---------------------------------+--------+-----------+----------+                |----------+-------------+---------+-------------------------------------'
+//                                   |  GUI   |    MO3    |          |                |   GUI    |     CTRL    |   ALT   |
+//                                   '--------+-----------+----------'                '----------+-------------+---------'
 
                         bindings = <
    &kp F1		   &kp F2   		  &kp F3             &kp F4            &kp F5              &kp F6                  &kp F7               &kp F8              &kp F9		   &kp F10             &kp F11     &kp F12
-   &kp LSHFT       &kp PAUSE_BREAK    &kp LGUI     	     &kp PAGE_UP       &kp INSERT          &kp DEL                 &kp LEFT_ARROW       &kp DOWN_ARROW      &kp UP_ARROW   &kp RIGHT_ARROW     &kp BSPC    &trans
-   &trans		   &trans    		  &trans             &kp LC(INS)       &kp LS(INS)         &trans                  &kp LC(LEFT_ARROW)   &kp HOME            &kp END        &kp LC(RIGHT_ARROW) &trans      &out OUT_TOG
-                                                         &kp LGUI          &mo ADJUST          &trans                  &kp LCTRL            &kp LALT            &kp K_CMENU
+   &trans          &kp PAUSE_BREAK    &trans     	     &kp PAGE_UP       &kp K_CMENU         &kp DEL                 &kp LEFT_ARROW       &kp DOWN_ARROW      &kp UP_ARROW   &kp RIGHT_ARROW     &kp BSPC    &trans
+   &trans		   &trans    		  &trans             &kp LC(INS)       &kp LS(INS)         &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)  &kp HOME            &kp END        &kp INSERT          &trans      &out OUT_TOG
+                                                         &kp LGUI          &mo ADJUST          &trans                  &kp LGUI             &kp LCTRL            &kp LALT
                         >;
                 };
 
