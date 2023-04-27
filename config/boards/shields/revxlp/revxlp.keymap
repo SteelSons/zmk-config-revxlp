@@ -61,10 +61,10 @@
 //                                   |  ALT   |         |   MO3   |                   |       |    0    |    /    |
 //                                   '--------+---------+---------'                   '-------+---------+---------'
                         bindings = <
-   &kp GRAVE  &kp EXCL       &kp AT        &kp HASH        &kp DLLR             &kp PRCNT             &kp KP_MINUS  &kp N7     &kp N8      &kp N9   &kp EQUAL          &kp KP_DIVIDE
-   &trans     &kp CARET      &kp AMPS      &kp KP_MULTIPLY &kp LEFT_BRACE       &kp RIGHT_BRACE       &kp KP_PLUS   &kp N4     &kp N5      &kp N6   &kp LPAR           &kp RPAR
-   &trans     &kp BACKSLASH  &kp COMMA     &kp DOT         &kp LEFT_BRACKET     &kp RIGHT_BRACKET     &kp SPACE     &kp N1     &kp N2      &kp N3   &kp UNDERSCORE     &kp COLON
-                                           &trans          &mo ADJUST           &trans            &trans        &kp N0     &kp FSLH
+   &kp GRAVE  &kp EXCL       &kp AT        &kp HASH        &kp DLLR             &kp PRCNT             &kp KP_MINUS  &kp N7        &kp N8      &kp N9   &kp EQUAL          &kp KP_DIVIDE
+   &trans     &kp CARET      &kp AMPS      &kp KP_MULTIPLY &kp LEFT_BRACE       &kp RIGHT_BRACE       &kp KP_PLUS   &kp N4        &kp N5      &kp N6   &kp LPAR           &kp RPAR
+   &trans     &kp BACKSLASH  &kp COMMA     &kp DOT         &kp LEFT_BRACKET     &kp RIGHT_BRACKET     &kp SPACE     &kp N1        &kp N2      &kp N3   &kp UNDERSCORE     &kp COLON
+                                           &trans          &mo ADJUST           &trans                &trans        &mt LSHFT N0  &kp FSLH
                         >;
                 };
                 
