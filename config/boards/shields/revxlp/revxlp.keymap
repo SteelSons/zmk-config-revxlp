@@ -52,19 +52,19 @@
                 
                 lower_layer {
 // .--------------------------------------------------------------.                   .-----------------------------------------------------------.
-// |     `        |    !    |    @   |   #    |    $    |    %    |                   |   -   |    7    |    8    |    9    |     =    |     /    |
+// |     `        |    !    |    @   |   #    |    $    |    %    |                   | NUM - |    7    |    8    |    9    |     =    |     /    |
 // |--------------+---------+--------+--------+---------+---------|                   |-------+---------+---------+---------+----------+----------|
 // |   CTRL/TAB   |    ^    |    &   |   *    |    {    |    }    |                   |   +   |    4    |    5    |    6    |     (    |     )    |
 // |--------------+---------+--------+--------+---------+---------|                   |-------+---------+---------+---------+----------+----------|
-// |   SHFT/TAB   |    \    |    ,   |   .    |    [    |    ]    |                   | SPACE |    1    |    2    |    3    |     _    |  NUMLOCK |
+// |   SHFT/TAB   |    \    |    ,   |   .    |    [    |    ]    |                   |   0   |    1    |    2    |    3    |     -    |  NUMLOCK |
 // '---------------------------------+--------+---------+---------+                   |-------+---------+---------+-------------------------------'
-//                                   |  ALT   |   MO3   |         |                   |       |    0    |    .    |
+//                                   |  ALT   |   MO3   |         |                   | SPACE |   SHFT  |    .    |
 //                                   '--------+---------+---------'                   '-------+---------+---------'
                         bindings = <
-   &kp GRAVE  &kp EXCL       &kp AT        &kp HASH        &kp DLLR             &kp PRCNT             &kp MINUS     &kp N7        &kp N8      &kp N9   &kp EQUAL          &kp KP_DIVIDE
+   &kp GRAVE  &kp EXCL       &kp AT        &kp HASH        &kp DLLR             &kp PRCNT             &kp KP_MINUS  &kp N7        &kp N8      &kp N9   &kp EQUAL          &kp KP_DIVIDE
    &trans     &kp CARET      &kp AMPS      &kp KP_MULTIPLY &kp LEFT_BRACE       &kp RIGHT_BRACE       &kp KP_PLUS   &kp N4        &kp N5      &kp N6   &kp LPAR           &kp RPAR
-   &trans     &kp BACKSLASH  &kp COMMA     &kp DOT         &kp LEFT_BRACKET     &kp RIGHT_BRACKET     &kp SPACE     &kp N1        &kp N2      &kp N3   &kp UNDERSCORE     &kp LOCKING_NUM
-                                           &trans          &mo ADJUST           &trans                &trans        &kp N0  &kp KP_DOT
+   &trans     &kp BACKSLASH  &kp COMMA     &kp DOT         &kp LEFT_BRACKET     &kp RIGHT_BRACKET     &kp N0        &kp N1        &kp N2      &kp N3   &kp MINUS          &kp NUMLOCK
+                                           &trans          &mo ADJUST           &trans                &kp SPACE     &kp LSHFT     &kp KP_DOT
                         >;
                 };
                 
